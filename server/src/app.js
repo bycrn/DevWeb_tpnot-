@@ -15,8 +15,8 @@ app.use(express.json());
     app.use("/api/products", productRoutes);
    
 
-    app.listen(5000, () => {
-      console.log("Server is listening on port 5000");
+    app.listen(3001, () => {
+      console.log("Server is listening on port 3001");
     });
   } catch (err) {
     console.error("Failed to connect to MongoDB and initialize products", err);

@@ -16,7 +16,7 @@ class Stock {
 
   async fetchProducts() {
     try {
-      const response = await axios.get("http://localhost:5000/api/products");
+      const response = await axios.get("http://localhost:3001/api/products");
       console.log("Products fetched:", response.data.result);
       this.list_product = response.data.result.map((prod) => new Product(prod._id, prod.name, "", prod.price));
     } catch (error) {
